@@ -1,0 +1,16 @@
+  "name" : "KBIDERobot-extension",
+  "title": "Extension for create Robot",
+  "keywords": "Robot, esp32, arduino",
+  "description": "Robot plugin for KB-IDE",
+  "category":"Extension",
+  //"git": "https://github.com/cmmc-kbide/kbide-plugin-ads1115/",
+  "author": "PrinceBot",
+  "email": "print081@gmail.com",
+  //"url": "https://github.com/cmmc-kbide/kbide-plugin-ads1115/",
+  "version": "1.0.0",
+  "board" : "",
+  "platform": ["arduino-esp32"],
+  "license": "Adafruit",
+  "image" : "/static/display.png",
+  "homepage": "http://www.kbide.org"
+}
