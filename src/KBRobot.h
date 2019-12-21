@@ -11,9 +11,6 @@
 #define M2B 27
 
 
-Adafruit_ADS1115 ads(0x49);
-Servo servo1;
-
 void KBRobot_Begin(){
   pinMode(M1A,OUTPUT);
   pinMode(M1B,OUTPUT);
@@ -27,9 +24,6 @@ void KBRobot_Begin(){
   ledcAttachPin(M1B, 7);
   ledcAttachPin(M2A, 4);
   ledcAttachPin(M2B, 5);
-
-  ads.setGain(GAIN_TWOTHIRDS);
-  ads.begin();
 
 }
 void motor(int pin,int _direction, int _Speeds) {
@@ -64,25 +58,4 @@ void motor(int pin,int _direction, int _Speeds) {
       ledcWrite(5, 0);
     }
   }
-}
-int read_ADC(int pin){
-	if(pin == 0){
-		return ads.readADC_SingleEnded(0);
-	}
-	else if(pin == 1){
-		return ads.readADC_SingleEnded(1);
-	}
-	else if(pin == 2){
-		return ads.readADC_SingleEnded(2);
-	}
-	else if(pin == 3){
-		return ads.readADC_SingleEnded(3);
-	}
-}
-void servo_write(int angle){
-	if (!(servo1.attached()))
-      {
-        servo1.attach(18);
-      }
-      servo1.write(angle);
 }
