@@ -8,7 +8,7 @@
   "author": "PrinceBot",
   "email": "print081@gmail.com",
   "url": "https://github.com/PrinceBot-Ratthanin/KBIDERobot-extension/",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "board" : "",
   "platform": ["arduino-esp32"],
   "license": "Adafruit",
