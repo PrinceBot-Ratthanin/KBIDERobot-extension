@@ -49,11 +49,6 @@ Blockly.JavaScript['KBRobot_motor_stop'] = function(block) {
   return code;
 };
 
-Blockly.JavaScript['KBRobot_motor_stop_ch'] = function(block) {
-  var dropdown_ch = block.getFieldValue('ch');
-  var code = 'motor(' + dropdown_ch + ', 1, 0);\n';
-  return code;
-};
 
 Blockly.JavaScript['adc_AnalogRead'] = function(block) {
   var dropdown_pin = block.getFieldValue('pin');
