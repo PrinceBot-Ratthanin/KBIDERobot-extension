@@ -50,12 +50,12 @@ void motor(int pin,int _direction, int _Speeds) {
     if (_SpeedsB > 255){_SpeedsB = 255;}
     else if (_SpeedsB < -255){_SpeedsB = -255;}
     if (_direction == 1) {
-      ledcWrite(4, 255-abs(_SpeedsB));
-      ledcWrite(5, 0);
+      ledcWrite(4, 0);
+      ledcWrite(5, abs(_SpeedsB));
     }
     else if (_direction == 2) {
-      ledcWrite(4, 255);
-      ledcWrite(5, 255-abs(_SpeedsB));
+      ledcWrite(4, abs(_SpeedsB));
+      ledcWrite(5, 0);
     }
   }
 }
